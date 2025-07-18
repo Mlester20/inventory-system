@@ -36,12 +36,12 @@
                                 <span>Products</span>
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="categories.php" class="dropdown-item-custom">
                                 <i class="fas fa-tags"></i>
                                 <span>Categories</span>
                             </a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="suppliers.php" class="dropdown-item-custom">
                                 <i class="fas fa-truck"></i>
@@ -70,7 +70,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="users.php" class="nav-link">
+                <a href="manageUsers.php" class="nav-link">
                     <i class="fas fa-users"></i>
                     <span>Users</span>
                 </a>
@@ -95,13 +95,13 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="userDropdown">
             <li>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="profile.php">
                     <i class="fas fa-user me-2"></i> View profile
                 </a>
             </li>
             <li>
-                <a class="dropdown-item" href="#">
-                    <i class="fas fa-cog me-2"></i> Logout
+                <a class="dropdown-item" href="logout.php" onclick="return confirm('Are you sure you want to logout?')">
+                    <i class="fas fa-cog me-2" ></i> Logout
                 </a>
             </li>
         </ul>

@@ -254,6 +254,11 @@
     margin-right: 0;
 }
 
+.main-content{
+    margin-left: 280px;
+    padding: 20px;
+}
+
 .sidebar-toggle {
     background: none;
     border: none;
