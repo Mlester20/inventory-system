@@ -23,7 +23,7 @@ if(!isset($_SESSION['user_id'])){
 <body>
     <?php include '../components/adminSidebar.php'; ?>
 
-    <div class="main-content container py-4">
+    <div class="main-content py-4 p-4">
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <h3 class="mb-4 text-center text-muted">User Management</h3>

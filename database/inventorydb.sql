@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 18, 2025 at 05:48 PM
+-- Generation Time: Jul 19, 2025 at 04:25 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -38,6 +38,25 @@ CREATE TABLE `products` (
   `created_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`product_id`, `user_id`, `product_name`, `category`, `unit`, `price`, `expiration_date`, `created_at`) VALUES
+(1, 2, 'Alcohol', 'Medicine', '35', 15, '2025-07-19', '2025-07-19 15:13:11'),
+(2, 2, 'Feeds', 'Foods', '25', 35, '2025-09-30', '2025-07-19 15:18:35'),
+(3, 2, 'Samsung S22 ', 'Electronics', '32', 18999, '2025-07-31', '2025-07-19 15:57:23'),
+(24, 2, 'Organic Chicken Feed', 'Poultry', 'kg', 35.5, '2025-12-01', '2025-07-10 00:00:00'),
+(25, 2, 'Natural Pig Meal', 'Livestock', 'kg', 42, '2025-11-15', '2025-06-18 00:00:00'),
+(26, 2, 'Fresh Duckweed', 'Aquatic Plant', 'kg', 15, '2025-10-20', '2025-05-30 00:00:00'),
+(27, 2, 'Soya Meal', 'Protein Source', 'kg', 55, '2025-08-12', '2025-07-01 00:00:00'),
+(28, 2, 'Copra Cake', 'Energy Source', 'kg', 28.75, '2025-12-05', '2025-03-22 00:00:00'),
+(29, 2, 'Molasses', 'Supplement', 'liter', 18.25, '2026-01-10', '2025-04-15 00:00:00'),
+(30, 2, 'Fermented Banana', 'Energy Source', 'kg', 22, '2025-09-09', '2025-06-25 00:00:00'),
+(31, 2, 'Flamengia Leaves', 'Fiber Source', 'kg', 19.5, '2025-08-30', '2025-07-12 00:00:00'),
+(32, 2, 'Rensonii', 'Green Feed', 'kg', 14.75, '2025-10-10', '2025-05-18 00:00:00'),
+(33, 2, 'Duck Starter Mix', 'Poultry', 'kg', 37, '2025-11-20', '2025-06-02 00:00:00');
+
 -- --------------------------------------------------------
 
 --
@@ -50,6 +69,13 @@ CREATE TABLE `stocks` (
   `quantity` int(11) DEFAULT NULL,
   `last_updated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `stocks`
+--
+
+INSERT INTO `stocks` (`stock_id`, `product_id`, `quantity`, `last_updated`) VALUES
+(1, 1, 35, '2025-07-19 15:37:54');
 
 -- --------------------------------------------------------
 
@@ -128,7 +154,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+
+--
+-- AUTO_INCREMENT for table `stocks`
+--
+ALTER TABLE `stocks`
+  MODIFY `stock_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `stock_logs`

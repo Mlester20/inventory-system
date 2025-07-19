@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
 
 <?php include '../components/adminSidebar.php'; ?>
 
-    <div class="main-content container">
+    <div class="main-content py-5 p-5">
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <form method="POST" class="form-section">
